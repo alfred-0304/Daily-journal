@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal - Daily Entries</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>Daily Journal</h1>
+                <a href="land.html" class="button button-outline">Back to Home</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Daily Entries</h2>
+            <div class="card">
+                <h3>New Entry</h3>
+                <form id="entryForm">
+                    <input type="date" id="entryDate" required>
+                    <textarea id="entryContent" placeholder="Write your thoughts for the day..." required></textarea>
+                    <button type="submit" class="button button-primary">Save Entry</button>
+                </form>
+            </div>
+            <div id="entriesList"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Daily Journal. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="page1.js"></script>
+</body>
+</html>

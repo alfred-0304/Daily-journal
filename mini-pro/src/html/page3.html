@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal - Goal Tracking</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>Daily Journal</h1>
+                <a href="land.html" class="button button-outline">Back to Home</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Goal Tracking</h2>
+            <div class="card">
+                <h3>New Goal</h3>
+                <form id="goalForm">
+                    <input type="text" id="goalTitle" placeholder="Goal Title" required>
+                    <textarea id="goalDescription" placeholder="Describe your goal..." required></textarea>
+                    <input type="date" id="goalDueDate" required>
+                    <button type="submit" class="button button-primary">Add Goal</button>
+                </form>
+            </div>
+            <div id="goalsList"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Daily Journal. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="page3.js"></script>
+</body>
+</html>
